@@ -1,10 +1,93 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>FlaMovie - HOME</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    </head>
-    <body>
-        <h1>WIP</h1>
-    </body>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="FlaMovie, la piattaforma ufficiale di DIP — Daniele & Ismaele Production."
+    >
+
+    <title>FlaMovie — Home</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}"
+    >
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="{{ url_for('home') }}" class="logo">
+            Fla<span>Movie</span>
+        </a>
+
+        <nav aria-label="Navigazione principale">
+            <ul class="nav-links">
+                <li>
+                    <a href="{{ url_for('home') }}" class="active">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about">
+                        Informazioni
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="coming-soon">
+        <section class="coming-soon-content">
+            <span class="hero-badge">
+                DIP Production
+            </span>
+
+            <h1>
+                Fla<span>Movie</span>
+            </h1>
+
+            <p class="coming-soon-subtitle">
+                La piattaforma ufficiale per le produzioni di
+                DIP — Daniele & Ismaele Production.
+            </p>
+
+            <div class="status-badge">
+                In sviluppo
+            </div>
+
+            <p class="coming-soon-message">
+                FlaMovie non è ancora disponibile.
+                Stiamo lavorando alla prima versione della piattaforma.
+            </p>
+        </section>
+    </main>
+
+    <section class="section about-section" id="about">
+        <div class="section-header">
+            <h2 class="section-title">
+                Cos’è FlaMovie?
+            </h2>
+        </div>
+
+        <p>
+            FlaMovie sarà la piattaforma dedicata ai film, ai trailer
+            e agli altri contenuti originali prodotti da
+            DIP — Daniele & Ismaele Production.
+        </p>
+    </section>
+
+    <footer class="footer">
+        <p>
+            © 2026 DIP — Daniele & Ismaele Production.
+            All Rights Reserved.
+        </p>
+    </footer>
+</body>
 </html>
