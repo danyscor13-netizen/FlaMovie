@@ -2,7 +2,7 @@ import os
 
 from flask import Flask, render_template
 
-app = Flask(__app__)
+app = Flask(__name__)
 
 @app.route('/')
 def home():
